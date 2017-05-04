@@ -1,0 +1,14 @@
+table td h2{
+    margin-bottom:2px;
+    margin-top:-0px;
+}
+
+
+
+table tr{
+    cursor: pointer;
+}
+
+table tr:hover{
+    background-color:#eee;
+}
