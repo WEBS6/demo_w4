@@ -8,10 +8,13 @@ import { AppComponent } from './app.component';
 import { routes } from './app.routes';
 import { RouterModule } from "@angular/router";
 import { ExampleModule } from "./example/example.module";
+import { ToastModalComponent } from './toast-modal/toast-modal.component';
+import { ToastService } from "./toast.service";
 
 @NgModule({
   declarations: [
     AppComponent,
+    ToastModalComponent,
   ],
   imports: [
     ExampleModule,
@@ -21,7 +24,7 @@ import { ExampleModule } from "./example/example.module";
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ToastService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

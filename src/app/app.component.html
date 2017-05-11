@@ -1,3 +1,9 @@
+
+<div>
+    <input [(ngModel)]="message"><button (click)="toast(message)">Toast</button>
+</div>
+
+
 <h2>Hero Manager</h2>
 
 <nav>
@@ -5,4 +11,8 @@
     <a routerLink="/example" routerLinkActive="active">Example providers</a>
 </nav>
 
+
+
 <router-outlet></router-outlet>
+
+<toast-modal></toast-modal>
