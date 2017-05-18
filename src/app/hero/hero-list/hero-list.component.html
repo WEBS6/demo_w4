@@ -1,7 +1,9 @@
 <h2>All heroes</h2>
 
+<hero-search (search)="term = $event"></hero-search>
+
 <table class="hero-list">
-  <tr *ngFor="let hero of heroes" (click)="goTo(hero)">
+  <tr *ngFor="let hero of heroes | search:term" (click)="goTo(hero)">
       <td>
         <img width="100px" src="https://battletime.herokuapp.com/images/hero_{{hero.id}}.png">
       </td>

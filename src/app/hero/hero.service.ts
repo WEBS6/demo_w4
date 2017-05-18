@@ -20,6 +20,8 @@ export class HeroService {
         this._heroes[2] = new Hero(3, "Flesje");
         this._heroes[3] = new Hero(4, "Supermarktman");
         this._heroes[4] = new Hero(5, "Green Lantaarnpaal");
+        this._heroes[5] = new Hero(6, "Ciderman");
+        this._heroes[6] = new Hero(7, "Strijkman");
     }
 
     public getHeroes(){

@@ -11,10 +11,11 @@ import { ExampleModule } from "./example/example.module";
 import { ToastModalComponent } from './toast-modal/toast-modal.component';
 import { ToastService } from "./toast.service";
 
+
 @NgModule({
   declarations: [
     AppComponent,
-    ToastModalComponent,
+    ToastModalComponent
   ],
   imports: [
     ExampleModule,
