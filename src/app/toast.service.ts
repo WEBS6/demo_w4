@@ -12,7 +12,6 @@ export class ToastService {
     }
 
     public ShowToast(message): void{
-        debugger;
         this.Toast.next(message);
     }
 }

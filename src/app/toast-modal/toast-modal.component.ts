@@ -14,20 +14,13 @@ export class ToastModalComponent implements OnInit {
   @Input()
   public messageTime: number;
   
-
   constructor(private toastService: ToastService) { }
 
   ngOnInit() {
     this.toastService.Toast.subscribe( (message: String) => {
-      debugger;
       this.showToast = true;
       this.message = message;
       setTimeout(() => this.showToast = false, 2000);
     })
-
-
   }
-
-
-
 }
